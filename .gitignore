@@ -1,55 +1,39 @@
-# Prerequisites
-*.d
-
-# Object files
+# ===== STM32CubeIDE 빌드 산출물 제외 =====
+/Debug/
+/Release/
 *.o
-*.ko
-*.obj
+*.d
 *.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
+*.bin
 *.hex
+*.map
+*.list
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# ===== IDE 관련 파일 제외 =====
+/.settings/
+/.metadata/
+/build/
+*.launch
+*.bak
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# ===== 백업/임시 파일 =====
+*~
+*.swp
+*.tmp
 
-# debug information files
-*.dwo
+# ===== OS별 불필요한 파일 =====
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+desktop.ini
+
+# ===== 로그 파일 =====
+*.log
+
+# ===== 생성된 라이브러리 =====
+*.a
+*.so
+
+# ===== CubeMX 프로젝트 파일은 항상 포함 =====
+!*.ioc
